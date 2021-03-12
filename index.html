@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="store.js" async></script>
+  </head>
+  <body>
+    <!-- Heading -->
+    <section id="heading">
+      <h1>Milestone 9</h1>
+      <p>
+        Write a simplified shopping cart that allows users to click and add
+        items to be bought. Create an initial array of products to be loaded and
+        displayed from JS, then for each one of them add a button to add them to
+        the cart, displaying an updated total amount.
+      </p>
+      <p>
+        I completed the JavaScript using a combination of a
+        <a
+          href="https://www.youtube.com/watch?v=YeFzkC2awTM&ab_channel=WebDevSimplified"
+          >video tutorial</a
+        >
+        and also other resources I found online. Styling and HTML I completed
+        myself.
+      </p>
+    </section>
+    <div id="divide"></div>
+
+    <!-- Shopping List -->
+    <section id="shopping-list">
+      <h1>Chocolate Shop</h1>
+      <div class="shop-items">
+        <div class="shop-item">
+          <span class="shop-item-title">Dairy Milk</span>
+          <img src="dairymilk.jpg" alt="Dairy Milk" class="shop-item-image" />
+          <div class="shop-item-details">
+            <span class="shop-item-price">£0.65</span>
+            <button class="add-to-cart" type="button">ADD TO CART</button>
+          </div>
+        </div>
+
+        <div class="shop-item">
+          <span class="shop-item-title">Freddo</span>
+          <img src="freddo.jpg" alt="Freddo" class="shop-item-image" />
+          <div class="shop-item-details">
+            <span class="shop-item-price">£0.25</span>
+            <button class="add-to-cart" type="button">ADD TO CART</button>
+          </div>
+        </div>
+
+        <div class="shop-item">
+          <span class="shop-item-title">Curly Wurly</span>
+          <img src="curlywurly.jpg" alt="Curly Wurly" class="shop-item-image" />
+          <div class="shop-item-details">
+            <span class="shop-item-price">£0.30</span>
+            <button class="add-to-cart" type="button">ADD TO CART</button>
+          </div>
+        </div>
+
+        <div class="shop-item">
+          <span class="shop-item-title">Maltesers</span>
+          <img src="malteasers.jpg" alt="Maltesers" class="shop-item-image" />
+          <div class="shop-item-details">
+            <span class="shop-item-price">£0.60</span>
+            <button class="add-to-cart" type="button">ADD TO CART</button>
+          </div>
+        </div>
+
+        <div class="shop-item">
+          <span class="shop-item-title">Toblerone</span>
+          <img src="toblerone.jpg" alt="Toblerone" class="shop-item-image" />
+          <div class="shop-item-details">
+            <span class="shop-item-price">£3.00</span>
+            <button class="add-to-cart" type="button">ADD TO CART</button>
+          </div>
+        </div>
+
+        <div class="shop-item">
+          <span class="shop-item-title">Crunchie Rocks</span>
+          <img
+            src="crunchierocks.jpg"
+            alt="Crunchie Rocks"
+            class="shop-item-image"
+          />
+          <div class="shop-item-details">
+            <span class="shop-item-price">£1.00</span>
+            <button class="add-to-cart" type="button">ADD TO CART</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Shopping Cart -->
+    <section class="container content-section">
+      <h1 class="section-header">Shopping Cart</h1>
+      <div class="cart-row">
+        <span class="cart-item cart-header cart-column">ITEM</span>
+        <span class="cart-price cart-header cart-column">PRICE</span>
+        <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+      </div>
+      <div class="cart-items"></div>
+      <div class="cart-total">
+        <strong class="cart-total-title">Total</strong>
+        <span class="cart-total-price">£0.00</span>
+      </div>
+      <button class="purchase" type="button">PURCHASE</button>
+    </section>
+  </body>
+</html>
