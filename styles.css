@@ -19,8 +19,8 @@ a {
 
 /* Shopping List */
 .shop-item-image {
-  height: 400px;
-  width: 400px;
+  height: 320px;
+  width: 320px;
   display: flex;
   border: 1px solid #000000;
 }
