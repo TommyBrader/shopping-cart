@@ -169,3 +169,11 @@ a {
   color: #ffffff;
   cursor: pointer;
 }
+
+/* Media Query */
+@media screen and (max-width: 400px) {
+  .shop-item-image {
+    height: 300px;
+    width: 300px;
+  }
+}
